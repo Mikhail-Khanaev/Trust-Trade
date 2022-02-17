@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Trust Trade»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Trust Trade»</h1>
+		<div class="rootpage__info">
+			Особенности проекта
+		</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+		</ol>
+		<!-- <h2>Страницы в разработке:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">О нас</a></li>
+		</ol> -->
+		<h2>Модальные окна:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#popup">Авторизация</a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h2>Спасибо за заказ!</h2>
+			<p>Буду рад хорошему отзыву</p>
+			<p>Обращайтесь еще!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>Мои контакты:</h2>
+			<p>Почта: <a class="contact-link" href="mailto:khanaevcsshtml@gmail.com"> khanaevcsshtml@gmail.com</a></p>
+			<p>Телефон: <a class="contact-link" href="tel:+79622558812"> +7-962-255-88-12</a></p>
+			<p>Телеграм: <a class="contact-link" target="_blank" href="https://t.me/Berl1ngo"> Berl1ngo</a>
+			</p>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: linear-gradient(140deg, #23515E, #BE838B);
+		background-repeat: no-repeat;
+		background-size: 200%;
+		animation: gradient 10s infinite;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0 50%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		100% {
+			background-position: 0 50%;
+		}
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		position: relative;
+		color: #F5EFEB;
+		text-decoration: none;
+
+	}
+
+	@media (min-width: 768px) {
+		a:after {
+			display: block;
+			position: absolute;
+			left: 0;
+			/*изменить на right:0;, чтобы изменить направление подчёркивания */
+			width: 100%;
+			/*задаём длинну линии до наведения курсора*/
+			height: 2px;
+			/*задаём ширину линии*/
+			background-color: #F5EFEB;
+			/*задаём цвет линии*/
+			content: "";
+			transition: width 0.3s ease-out;
+			/*задаём время анимации*/
+		}
+
+		a:hover:after {
+			width: 0%;
+			/*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+		}
+	}
+
+	a:visited {
+		color: #A9C7C5;
+	}
+
+	a:visited:after {
+		background-color: #A9C7C5;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.contact-link {
+
+		transition: color .3s ease;
+	}
+
+	.contact-link:after {
+		width: 0;
+	}
+
+	.contact-link:hover {
+		color: #E2CFC9;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #F5EFEB;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #F5EFEB;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	@media (max-width: 420px) {
+		h1 {
+			font-size: 1.25rem;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 15px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #245D6B;
+
+	}
+
+	.rootpage__contacts a {
+		color: #F5EFEB;
+	}
+
+	.rootpage__tnx {
+		background: #4C6A78;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	::selection {
+		background: #81B29A;
+		/* Safari */
+	}
+
+	::-moz-selection {
+		background: #81B29A;
+		/* Firefox */
+	}
+</style>
+
+</html>
