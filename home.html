@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220217172411">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220217234741">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,53 +14,270 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-lp class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
-					<a href="#" class="header__logo logo-header">
+					<a data-watch href="#" class="header__logo logo-header move-left">
 						<img class="logo-header__image" src="img/logo.svg" alt="логотип">
 						<p class="logo-header__text">turst trade</p>
 					</a>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Обучение</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Трейдинг</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+							<li data-watch class="menu__item scale"><a href="#" class="menu__link">Обучение</a></li>
+							<li data-watch class="menu__item scale"><a href="#" class="menu__link">Трейдинг</a></li>
+							<li data-watch class="menu__item scale"><a href="#" class="menu__link">Преимущества</a></li>
+							<li data-watch class="menu__item scale"><a href="#" class="menu__link">О нас</a></li>
+							<li data-watch class="menu__item scale"><a href="#" class="menu__link">Контакты</a></li>
 						</ul>
 						<ul class="menu__buttons">
-							<li class="menu__button">
+							<li data-watch class="menu__button move-left">
 								<a href="#" data-popup="#popup" class="header__authorization-2 button">Начать
 									прямо сейчас!</a>
 							</li>
-							<li class="menu__button">
+							<li data-watch class="menu__button move-right">
 								<a href="#" data-popup="#popup" class="header__authorization header__authorization-2">Авторизация</a>
 							</li>
 						</ul>
 					</nav>
-					<a href="#" data-popup="#popup" class="header__authorization header__authorization-1">Авторизация</a>
+					<a data-watch href="#" data-popup="#popup" class="header__authorization header__authorization-1 scale">Авторизация</a>
 				</div> <!-- header__menu -->
 			</div> <!-- header__container -->
 		</header> <!-- header -->
 		<main class="page">
+			<section class="intro">
+				<div class="intro__background">
+					<picture><source srcset="img/intro/background.webp" type="image/webp"><img class="intro__background" src="img/intro/background.png" alt="background"></picture>
+				</div>
+
+				<div class="intro__container">
+					<div class="intro__body">
+						<div class="intro__text">
+							<p data-watch data-watch-once class="intro__suptitle scale">Присоединяйся!</p>
+							<h1 data-watch data-watch-once class="intro__title _icon-hand scale">
+								ПОЛУЧАЙТЕ ПРИБЫЛЬ ОТ ТОРГОВЛИ!
+							</h1>
+							<p data-watch data-watch-once class="intro__subtitle scale">
+								Совершенствуйте свои торговые навыки и откройте для себя
+								больше финансовых возможностей
+							</p>
+							<a data-watch data-watch-once href="#" class="intro__button button scale">Начать прямо
+								сейчас</a>
+							<div data-watch data-watch-once class="header__authorization--wrapper scale">
+								<a href="#" data-popup="#popup" class="header__authorization header__authorization-3">Авторизация</a>
+							</div>
+
+						</div>
+
+						<div data-watch data-watch-once class="intro__image scale">
+							<picture><source srcset="img/intro/1.webp" type="image/webp"><img src="img/intro/1.png" alt="Ноутбук и телефон"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="benefits padding">
+				<div class="benefits__container">
+					<h2 data-watch data-watch-once class="benefits__title title move-top"><span>Почему трейдеры выбирают
+							trust
+							trade</span></h2>
+
+					<div class="benefits__cards">
+						<div data-watch data-watch-once class="benefits__card card-benefits scale">
+							<div class="card-benefits__image _icon-dollar">
+								<img src="img/hexhagon.svg" alt="1">
+							</div>
+							<h3 class=" card-benefits__title">Аккаунт всего 10$</h3>
+							<p class="card-benefits__text">Вам не понадобится накапливать стартовый капитал, он у
+								Вас
+								есть!</p>
+						</div>
+						<div data-watch data-watch-once class="benefits__card card-benefits scale">
+							<div class="card-benefits__image _icon-platform">
+								<img src="img/hexhagon.svg" alt="1">
+							</div>
+							<h3 class=" card-benefits__title">Современная платформа
+							</h3>
+							<p class="card-benefits__text">Простой и понятный интерфейс,
+								принесет Вам удовольствие
+								от торговли
+							</p>
+						</div>
+						<div data-watch data-watch-once class="benefits__card card-benefits scale">
+							<div class="card-benefits__image _icon-cards">
+								<img src="img/hexhagon.svg" alt="1">
+							</div>
+							<h3 class=" card-benefits__title">Демо счет</h3>
+							<p class="card-benefits__text">Вы всегда можете улучшить свои
+								торговые навыки на своём
+								демо-счете
+							</p>
+						</div>
+						<div data-watch data-watch-once class="benefits__card card-benefits scale">
+							<div class="card-benefits__image _icon-chat">
+								<img src="img/hexhagon.svg" alt="1">
+							</div>
+							<h3 class=" card-benefits__title">Онлайн поддержка
+							</h3>
+							<p class="card-benefits__text">Вы можете в любое время отправить
+								сообщение через чат
+								и получить
+								ответ от наших менеджеров</p>
+						</div>
+						<div data-watch data-watch-once class="benefits__card card-benefits scale">
+							<div class="card-benefits__image _icon-check">
+								<img src="img/hexhagon.svg" alt="1">
+							</div>
+							<h3 class=" card-benefits__title">Разные способы вывода</h3>
+							<p class="card-benefits__text">Вносите и выводите средства
+								просто и быстро на любой
+								удобный для Вас счет</p>
+						</div>
+						<div data-watch data-watch-once class="benefits__card card-benefits scale">
+							<div class="card-benefits__image _icon-plenty">
+								<img src="img/hexhagon.svg" alt="1">
+							</div>
+							<h3 class=" card-benefits__title">Множество активов
+							</h3>
+							<p class="card-benefits__text">Откройте счет и торгуйте всеми популярными тороговыми
+								активами!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about padding">
+				<div class="about__container">
+					<div class="about__body">
+						<div class="about__text">
+							<h2 data-watch data-watch-once class="about__title title move-top"><span>Удобное пользование
+									и адаптивный
+									дизайн</span></h2>
+							<p data-watch data-watch-once class="about__subtext appearence">
+								Наша платформа адаптирована под различные устройства,
+								тем самым, это даст Вам значительное преимущество
+								относительно других конкуретнов. Также, мы оказать Вам
+								помощь и ответить на все ваши интересующие вопросы, для
+								этого Обратитесь к нашим <a href=" #">менеджерам</a>
+							</p>
+							<div data-watch data-watch-once data-da=".about__body, 767, last" class="about__buttons move-bottom">
+								<a href="#" class="button">ОТКРЫТЬ СЧЕТ</a>
+								<a href="#" class="about__button">Подробнее О НАС</a>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="about__image scale">
+							<picture><source srcset="img/about/1.webp" type="image/webp"><img src="img/about/1.png" alt="about image"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="achievements">
+				<div class="achievements__container">
+					<h2 data-watch data-watch-once class="achievements__title title move-top">
+						<span>МЫ ПОЛУЧИЛИ ПРИЗНАНИЕ ОТ ЭКСПЕРТОВ ОТРАСЛИ</span>
+					</h2>
+					<div class="achievements__cards">
+						<div class="card-achievements card-achievements-1">
+							<div data-watch data-watch-once class="card-achievements__year scale">2021</div>
+							<div data-watch data-watch-once class="card-achievements__title scale">Most recognizable
+								brand</div>
+							<div data-watch data-watch-once class="card-achievements__subtitle scale">Broker university
+							</div>
+						</div>
+						<div class="card-achievements card-achievements-2">
+							<div data-watch data-watch-once class="card-achievements__year scale">2022</div>
+							<div data-watch data-watch-once class="card-achievements__title scale">Most recognizable
+								brand</div>
+							<div data-watch data-watch-once class="card-achievements__subtitle scale">Broker university
+							</div>
+						</div>
+						<div class="card-achievements card-achievements-3">
+							<div data-watch data-watch-once class="card-achievements__year scale">2020</div>
+							<div data-watch data-watch-once class="card-achievements__title scale">Most recognizable
+								brand</div>
+							<div data-watch data-watch-once class="card-achievements__subtitle scale">Broker university
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__body">
+
+					<ul class="footer__list">
+						<li data-watch data-watch-once class="footer__item scale"><a href="#" class="footer__link">Обучение</a>
+						</li>
+						<li data-watch data-watch-once class="footer__item scale"><a href="#" class="footer__link">Трейдинг</a>
+						</li>
+						<li data-watch data-watch-once class="footer__item scale"><a href="#" class="footer__link">Преимущества</a></li>
+						<li data-watch data-watch-once class="footer__item scale"><a href="#" class="footer__link">О нас</a>
+						</li>
+						<li data-watch data-watch-once class="footer__item scale"><a href="#" class="footer__link">Контакты</a>
+						</li>
+					</ul>
+					<a data-watch data-watch-once href="#" class="header__logo logo-header scale">
+						<img class="logo-header__image" src="img/logo.svg" alt="логотип">
+						<p class="logo-header__text">turst trade</p>
+					</a>
+					<div data-watch data-watch-once class="footer__text move-top">
+						Финансовые операции, предлагаемые на этом сайте, могут быть связаны с повышенным риском. Используя
+						финансовые услуги и
+						инструменты, предлагаемые этим сайтом, вы можете понести серьезные финансовые потери или полностью
+						потерять средства на
+						своем гарантированном торговом счете. Пожалуйста, оцените все финансовые риски и обратитесь за советом к
+						независимому
+						финансовому консультанту перед торговлей TRUST TRADE не несет ответственности за какие-либо прямые,
+						косвенные или любые
+						другие убытки, возникшие в результате действий пользователей на этом сайте.
+					</div>
+					<p data-watch data-watch-once class="footer__copyright move-bottom">
+						© 2022 Copyriting
+					</p>
+				</div>
 			</div>
 		</footer>
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрыть</button>
+				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__text">
+					<h3 class="popup__title">Авторизация в аккаунт</h3>
+					<div class="popup__subtitle">Заполните данные ниже дня входа</div>
+
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__item">
+							<label class="form-popup__label" for="username">Логин</label>
+							<input name="username" autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="input form-popup__input">
+						</div>
+						<div class="form-popup__item">
+							<div class="form-popup__item-wrapper">
+								<label class="form-popup__label" for="userpass">Пароль</label>
+								<a href="#" class="forgot-password">Forgot password?</a>
+							</div>
+							<input name="userpass" autocomplete="off" type="password" name="form[]" data-error="Ошибка" class="input form-popup__input">
+						</div>
+						<button type="submit" class="form-popup__button button">Войти в личный кабинет</button>
+					</form>
+
+					<a href="#" class="popup__link">Нет аккаунта? <span>Регистрация</span></a>
+					<p class="popup__or">or</p>
+
+					<div class="popup__items">
+						<a href="#" class="popup__item">
+							<picture><source srcset="img/google.webp" type="image/webp"><img src="img/google.png" alt="google"></picture>
+							<p>Continue witch Google</p>
+						</a>
+						<a href="#" class="popup__item">
+							<picture><source srcset="img/facebook.webp" type="image/webp"><img src="img/facebook.png" alt="facebook"></picture>
+							<p>Continue witch Facebook</p>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220217172411"></script>
+	<script src="js/app.min.js?_v=20220217234741"></script>
 </body>
 
 </html>
